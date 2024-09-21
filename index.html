@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChillBlock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>ChillBlock</h1>
+    <p>Here you can write anything you want the way you want.</p>
+    <p>Just grab a drink,relax,put a music and let your mind speak for you.</p>
+
+    <textarea id="note" placeholder="Escreva suas notas aqui..."></textarea>
+
+    <!-- Botão para salvar a nota -->
+    <button onclick="saveNote()">Save Note</button>
+
+    <!-- Botão para abrir uma nota -->
+    <input type="file" id="fileInput" accept=".txt" style="display: none;" onchange="openNote(event)">
+    <div></div>
+    <button onclick="document.getElementById('fileInput').click()">Open Note</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
